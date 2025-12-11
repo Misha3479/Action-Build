@@ -55,7 +55,7 @@ on:
       SUSFS_CI:
         type: choice
         description: "SUSFS模块下载调用方向"
-        required: true
+        required: false
         default: NoN
         options:
           - CI
