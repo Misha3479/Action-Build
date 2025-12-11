@@ -53,14 +53,10 @@ on:
           - SPOOF
           - MIUIX
       SUSFS_CI:
-        type: choice
+        type: boolean
         description: "SUSFS模块下载调用方向"
-        required: false
-        default: NoN
-        options:
-          - CI
-          - Release
-          - NoN
+        required: true
+        default: true
       SUSFS_META:
         type: string
         description: "回退SUSFS到指定哈希版本"
